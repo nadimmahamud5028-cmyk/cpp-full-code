@@ -2,7 +2,8 @@
 using namespace std;
 int main()
 {
-    float f = 23.456789;
-    cout << fixed << setprecision(3) << f << '\n';
+    int x;
+    cin >> x;
+    x%2 == 0 ? cout << "Even" : cout << "Odd";
     return 0;
 }
