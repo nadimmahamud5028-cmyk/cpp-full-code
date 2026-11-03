@@ -3,7 +3,9 @@ using namespace std;
 int main()
 {
     int x;
-    cin >> x;
-    cout << (char)x << '\n';
+    while(cin >> x)
+    {
+        cout << x << '\n';
+    }
     return 0;
 }
