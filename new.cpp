@@ -2,10 +2,11 @@
 using namespace std;
 int main()
 {
-    int mn = min(2,3);
-    int mx = max(2,3);
-    int mn1 = min({2,3,4});
-    int mx1 = max({2,3,4});
-    cout << mn << mx << mn1 << mx1;
+    int x;
+    cin >> x;
+    cin.ignore();
+    char s[20];
+    cin.getline(s,20);
+    cout << x <<" " << s << endl;
     return 0;
 }
