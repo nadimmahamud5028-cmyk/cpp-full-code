@@ -2,10 +2,7 @@
 using namespace std;
 int main()
 {
-    int x;
-    while(cin >> x)
-    {
-        cout << x << '\n';
-    }
+    float f = 23.456789;
+    cout << fixed << setprecision(3) << f << '\n';
     return 0;
 }
