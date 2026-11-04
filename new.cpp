@@ -2,11 +2,13 @@
 using namespace std;
 int main()
 {
-    int x;
-    cin >> x;
-    cin.ignore();
-    char s[20];
-    cin.getline(s,20);
-    cout << x <<" " << s << endl;
+    int x = 10;
+    int *p = &x;
+    x = 100;
+
+    int y;
+    int *q = new int;
+    *q = 100;
+    cout << x << " "  << *q << '\n';
     return 0;
 }
