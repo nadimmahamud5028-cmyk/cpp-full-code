@@ -3,17 +3,18 @@ using namespace std;
 struct Student
 {
     public:
+        
+        char name[10];
         int roll;
-        char c[10];
-        float f;
+        double gpa;
 };
 int main()
 {
     Student a;
-    a.roll = 1;
-    a.f = 4.00;
-    char tmp[10] = "Nerob";
-    strcpy(a.c , tmp);
-    cout << a.roll << " " << a.f << " " << a.c <<'\n';
+    cin >> a.name >> a.roll >> a.gpa;
+    Student b;
+    cin >> b.name >> b.roll >> b.gpa;
+    cout << a.name << " " << a.roll << " " << a.gpa << '\n';
+    cout << b.name << " " << b.roll << " " << b.gpa << '\n';
     return 0;
 }
