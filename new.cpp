@@ -1,20 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
-int *fun()
+struct Student
 {
-    int *a = new int[5];
-    for(int i = 0;i<5;i++)
-    {
-        cin >> a[i];
-    }
-    return a;
-}
+    public:
+        int roll;
+        char c[10];
+        float f;
+};
 int main()
 {
-    int *x = fun();
-    for(int i =0;i<5;i++)
-    {
-        cout << x[i] << '\n';
-    }
+    Student a;
+    a.roll = 1;
+    a.f = 4.00;
+    char tmp[10] = "Nerob";
+    strcpy(a.c , tmp);
+    cout << a.roll << " " << a.f << " " << a.c <<'\n';
     return 0;
 }
