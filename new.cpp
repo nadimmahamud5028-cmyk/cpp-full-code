@@ -1,25 +1,26 @@
 #include<bits/stdc++.h>
 using namespace std;
-struct Student
+class Student
 {
     public:
-        
-        char name[100];
-        int roll;
-        double gpa;
+    int roll;
+    int cls;
+    double gpa;
 };
 int main()
 {
-    Student a,b;
-    cin.getline(a.name,100);
-    cin >>a.roll >> a.gpa;
+    Student nerob;
+    nerob.roll = 1;
+    nerob.cls = 2;
+    nerob.gpa = 5.00;
 
-    cin.ignore();
+    Student Nadim;
+    Nadim.roll = 2;
+    Nadim.cls = 2;
+    Nadim.gpa = 5.01;
 
-    cin.getline(b.name,100);
-    cin >> b.roll >> b.gpa;
     cout << fixed << setprecision(2);
-    cout << a.name << " " << a.roll << " " << a.gpa << '\n';
-    cout << b.name << " " << b.roll << " " << b.gpa << '\n';
+    cout <<nerob.cls <<" " <<nerob.roll <<" "<<nerob.gpa<<'\n';
+    cout <<Nadim.cls <<" " <<Nadim.roll <<" "<<Nadim.gpa<<'\n';
     return 0;
 }
