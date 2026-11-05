@@ -3,24 +3,22 @@ using namespace std;
 class Student
 {
     public:
-    int roll;
-    int cls;
-    double gpa;
+        int cls;
+        int roll;
+        double gpa;
+        Student(int c,int r,double g)
+        {
+            cls = c;
+            roll =r;
+            gpa = g;
+        }
 };
 int main()
 {
-    Student nerob;
-    nerob.roll = 1;
-    nerob.cls = 2;
-    nerob.gpa = 5.00;
+    Student Nadim(4,5,5.00);
+    Student Nerob(4,6,4.99); 
 
-    Student Nadim;
-    Nadim.roll = 2;
-    Nadim.cls = 2;
-    Nadim.gpa = 5.01;
-
-    cout << fixed << setprecision(2);
-    cout <<nerob.cls <<" " <<nerob.roll <<" "<<nerob.gpa<<'\n';
-    cout <<Nadim.cls <<" " <<Nadim.roll <<" "<<Nadim.gpa<<'\n';
+    cout << Nadim.cls <<" " << Nadim.roll <<" " <<Nadim.gpa <<'\n';
+    cout <<  Nerob.cls <<" " <<  Nerob.roll <<" " << Nerob.gpa <<'\n';
     return 0;
 }
