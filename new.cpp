@@ -2,20 +2,12 @@
 using namespace std;
 int main()
 {
-    string s,word;
-    getline(cin,s);
-    cout << s << '\n';
-    stringstream ss(s);
-    ss >> word;
-    cout << word << endl;
-    ss>> word;
-    cout << word << endl;
-    int cnt =0;
-    while(ss >> word)
+    string s;
+    cin >> s;
+    sort(s.begin(),s.end());
+    for(auto x: s)
     {
-        cnt++;
-        cout << word << '\n';
+        cout << x << " ";
     }
-    cout << cnt << '\n';
     return 0;
 }
