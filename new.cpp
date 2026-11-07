@@ -2,23 +2,19 @@
 using namespace std;
 int main()
 {
-    int n;
-    cin >> n;
-    int a[n];
-    for(int i =0;i<n;i++)
+    string s;
+    // cin >>s;
+    // for(auto x= s.begin();x<s.end();x++)
+    // {
+    //     cout << *x <<" ";
+    // }
+    // cout <<'\n';
+    // cin.ignore();
+    getline(cin,s);
+    
+    for(auto x= s.begin();x<s.end();x++)
     {
-        cin >> a[i];
-    }
-    sort(a,a+n);
-    for(int i =0;i<n;i++)
-    {
-        cout << a[i] << " ";
-    }
-    cout << '\n';
-    sort(a,a+n, greater<int>());
-    for(int i =0;i<n;i++)
-    {
-        cout << a[i] << " ";
+        cout << *x <<" ";
     }
     return 0;
 }
