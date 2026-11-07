@@ -2,19 +2,20 @@
 using namespace std;
 int main()
 {
-    string s;
-    // cin >>s;
-    // for(auto x= s.begin();x<s.end();x++)
-    // {
-    //     cout << *x <<" ";
-    // }
-    // cout <<'\n';
-    // cin.ignore();
+    string s,word;
     getline(cin,s);
-    
-    for(auto x= s.begin();x<s.end();x++)
+    cout << s << '\n';
+    stringstream ss(s);
+    ss >> word;
+    cout << word << endl;
+    ss>> word;
+    cout << word << endl;
+    int cnt =0;
+    while(ss >> word)
     {
-        cout << *x <<" ";
+        cnt++;
+        cout << word << '\n';
     }
+    cout << cnt << '\n';
     return 0;
 }
